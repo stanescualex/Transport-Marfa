@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body class="bg-dark">
+
+    <input class="inputCheckBox" type="checkbox" id="navcheck" role="button" title="menu">
+    <label class="checkBoxLabel" for="navcheck" aria-hidden="true" title="menu">
+        <span class="burger">
+            <span class="bar">
+                <span class="visuallyhidden">Menu</span>
+            </span>
+        </span>
+    </label>
+    <nav id="menu">
+        <a href="./main.html">Pagina principala</a>
+        <a href="./details.html">Despre noi</a>
+        <a href="./services.html">Servicii</a>
+        <a href="./galery.html">Galerie Foto</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+    <main>
+        <a href="https://wa.me/40769498604" target="_blank" class="whatsapp-button">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-left">
+                    <h1 class="mb-2">Serviciile noastre</h2>
+                        <div class="border-bottom border-dark w-50 mb-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <article>
+                <p>Transport materiale de construcții rapid și sigur – oferim servicii profesionale de transport
+                    balastru, nisip, pietriș, pământ și pământ vegetal pentru șantiere, curți, grădini și lucrări de
+                    amenajare. Firma noastră de transport pune la dispoziție camioane moderne și șoferi calificați,
+                    asigurând livrări eficiente, indiferent de cantitate sau destinație.</p>
+                <p>Indiferent că ești persoană fizică sau firmă de construcții, oferim soluții personalizate pentru
+                    transport material de construcții la timp, în condiții optime. Serviciile noastre includ transport
+                    balastru pentru fundații și drumuri, nisip pentru beton și tencuieli, pietriș pentru alei și lucrări
+                    de infrastructură, și pământ sau pământ vegetal pentru nivelări și amenajări exterioare.</p>
+                <p>Alege serviciile noastre pentru transport rapid materiale de construcții, cu livrare directă la
+                    șantier, eficiență și seriozitate garantate.</p>
+            </article>
+        </div>
+
+
+        <div class="container my-5">
+
+
+            <div class="row text-center ">
+
+                <div class="col-md-6 mb-4 reveal">
+                    <div class="p-4 bg-light rounded shadow h-100">
+                        <i class="fa fa-truck fa-3x text-warning mb-3"></i>
+                        <h4 class="text-benefit">Transport balastru</h4>
+                        <p>Oferim servicii rapide și sigure de transport balastru pentru construcții civile și
+                            industriale. Balastrul este ideal pentru fundații, drumuri, platforme și lucrări de
+                            infrastructură. Asigurăm livrare promptă, în cantitățile solicitate, direct la locația
+                            clientului.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4 reveal">
+                    <div class="p-4 bg-light rounded shadow h-100">
+                        <i class="fa fa-cubes fa-3x text-warning mb-3"></i>
+                        <h4 class="text-benefit">Transport nisip</h4>
+                        <p>Asigurăm transport nisip de calitate pentru construcții, amenajări și lucrări diverse.
+                            Nisipul este potrivit pentru betoane, tencuieli, pavaje sau umpluturi. Livrăm rapid și
+                            eficient, respectând cerințele fiecărui proiect.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center ">
+                <div class="col-md-6 mb-4 reveal">
+                    <div class="p-4 bg-light rounded shadow h-100">
+                        <i class="fa fa-road fa-3x text-warning mb-3"></i>
+                        <h4 class="text-benefit">Transport pietriș</h4>
+                        <p>Punem la dispoziție transport pietriș pentru fundații, alei, drumuri și alte lucrări de
+                            construcții. Pietrișul oferă rezistență și stabilitate, fiind esențial în multe proiecte.
+                            Garantăm livrare sigură și la timp.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4 reveal">
+                    <div class="p-4 bg-light rounded shadow h-100">
+                        <i class="fa fa-leaf fa-3x text-warning mb-3"></i>
+                        <h4 class="text-benefit">Transport pământ</h4>
+                        <p>Oferim transport pământ pentru umpluturi, nivelări de teren și amenajări exterioare.
+                            Serviciul este ideal pentru curți, grădini sau lucrări de construcții. Ne adaptăm volumului
+                            necesar și livrăm eficient.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Arie de acoperire</h1>
+            <div id="Area" class="container content space reveal">
+                <div id="map" style="height: 500px; width: 100%; margin: 0 auto;"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="footer content">
+            <div class="row">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <ul>
+
+                    <li><a href="tel:40769498604">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row Copyright">
+                <p>AXS Copyright © 2025 AXS - All rights reserved || Designed By: Aless </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js">
+    </script>
+    <script src="./jquery-3.7.1.js"></script>
+    <script src="./code.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
